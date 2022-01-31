@@ -1,0 +1,131 @@
+@media(max-width: 900px) {
+    .demonstration,.course{
+        flex-direction: column;
+    }
+}
+body{
+    background-color: gainsboro;
+}
+.test{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+.logo{
+    background-color: black;
+    text-align: center;
+    height: 3cm;
+}
+nav{
+    display: flex;
+    background-color: grey;
+    text-align: center;
+    justify-content: space-evenly;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    font-family: 'Nunito', sans-serif;
+}
+h1{
+    color: black;
+    font-family: 'Nunito';
+    font-size: 50px;
+}
+h2{
+    color: black;
+    font-family: 'Nunito';
+}
+.Features,.course{
+    display: flex;
+    justify-content: space-evenly;
+}
+a:hover{
+    color: brown;
+}
+p{
+    font-family: 'Nunito';
+    font-weight: bold;
+    font-size: larger;
+}
+.mail{
+    border: 3px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    width: 30%;
+    font-family: 'Nunito';
+}
+.submit
+{
+    border: 2px solid black;
+    margin: 10px;
+    border-radius: 5px;
+    padding: 5px;
+    font-family: 'Nunito';
+    font-weight: bold;
+}
+.submit:hover,button:hover{
+    cursor: pointer;
+    background-color: brown;
+    color: white;
+}
+.demonstration{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px;
+}
+.imcr{
+    width: 430px;
+    height: 300px;
+    border: 1px solid gray;
+    border-radius: 15px;
+}
+.imcr:hover{
+    animation-name: img;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+}
+@keyframes img {
+    0%{
+        position: relative;
+        left: -0px;
+        top: -0px;
+        width: 430px;
+        height: 300px;
+        }
+    100%{
+        position: relative;
+        left: -2px;
+        top: -2px;
+        
+        width: 450px;
+        height: 320px;
+        }
+    
+}
+button{
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    font-family: 'Nunito';
+    font-weight: bold;
+    width: 30%;
+}
+footer{
+    margin: 10px;
+    padding: 5px;
+    background-color: gray;
+    display: flex;
+    justify-content: right;
+}
+.flink{
+    display: flex;
+    justify-content: right;
+}
+
+.c{
+    margin: 10px;
+}
+
+
