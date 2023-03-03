@@ -79,9 +79,12 @@ p{
     border-radius: 15px;
 }
 .imcr:hover{
-    animation-name: img;
+    /* animation-name: img;
     animation-duration: 500ms;
-    animation-fill-mode: forwards;
+    animation-fill-mode: forwards; */
+    transform: scale(1.01);
+    transition: 0.3s;
+    cursor: pointer;
 }
 iframe{
     width: 100%;
@@ -90,7 +93,7 @@ iframe{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
-@keyframes img {
+/* @keyframes img {
     0%{
         position: relative;
         left: -0px;
@@ -107,7 +110,7 @@ iframe{
         height: 320px;
         }
     
-}
+} */
 button{
     border: 1px solid black;
     border-radius: 5px;
