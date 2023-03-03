@@ -1,16 +1,7 @@
-@media(max-width: 900px) {
-    .demonstration,.course{
-        flex-direction: column;
-    }
-    .Features{
-        flex-direction: column;
-    }
-    nav a{
-        font-size: 20px;
-    }
-}
 body{
     background-color: gainsboro;
+    padding: 10px;
+    margin: 0;
 }
 .test{
     position: -webkit-sticky;
@@ -43,9 +34,9 @@ h2{
     color: black;
     font-family: 'Nunito';
 }
-.Features,.course{
-    display: flex;
-    justify-content: space-evenly;
+.course{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 a:hover{
     color: brown;
@@ -95,6 +86,10 @@ p{
 iframe{
     width: 100%;
 }
+.features{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
 @keyframes img {
     0%{
         position: relative;
@@ -122,10 +117,8 @@ button{
     width: 30%;
 }
 footer{
-    margin: 10px;
     padding: 5px;
     background-color: gray;
-    width: 100vw;
 }
 .flink{
     display: flex;
@@ -141,5 +134,31 @@ footer{
 .fp{
     width: 100%;
 }
-
+@media(max-width: 900px) {
+    .demonstration{
+        flex-direction: column;
+    }
+    nav a{
+        font-size: 20px;
+    }
+    .features{
+        grid-template-columns: 1fr;
+    }
+    .course{
+        grid-template-columns: 1fr;
+    }
+    iframe{
+        width: 60%;
+    }
+    .c{
+        width: 60%;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+}
+@media(max-width: 550px){
+    iframe, .c{
+        width: 100%;
+    }
+}
 
